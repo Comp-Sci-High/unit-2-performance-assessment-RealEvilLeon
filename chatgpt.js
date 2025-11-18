@@ -24,7 +24,7 @@ async function chatgptBot(promptData){
     // the actual calling
     let response = await fetch(requestURL,options)
     let actualData = await response.json()
-    console.log(actualData)
+    console.log(actualData.output[0].content[0].text)
     return actualData
 }
 
