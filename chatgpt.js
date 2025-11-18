@@ -28,7 +28,10 @@ async function chatgptBot(promptData){
     return actualData
 }
 
+console.log("Welcome To FakeGPT.")
+let Userinput = prompt('What would you like to prompt? ')
+
 chatgptBot({
     model:"gpt-4.1",
-    input:"Tell me a three sentence bedtime story about a unicorn."
+    input: Userinput
 })
